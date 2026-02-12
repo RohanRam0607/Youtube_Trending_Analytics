@@ -47,3 +47,43 @@ https://youtubetrendinganalytics-ucjm8jek7grxktmnulduqc.streamlit.app/
 
 ## 📂 Project Structure
 
+yt-project/
+│
+├── .github/
+│   └── workflows/
+│       └── ci.yml                # (optional) GitHub Actions CI
+│
+├── .streamlit/
+│   └── config.toml               # Streamlit config (NOT secrets)
+│
+├── app/
+│   ├── __init__.py
+│   ├── main.py                   # Streamlit entry point (renamed from app.py)
+│   ├── ui/
+│   │   ├── __init__.py
+│   │   └── components.py
+│   │
+│   ├── services/
+│   │   ├── __init__.py
+│   │   ├── model_service.py
+│   │   └── prediction_service.py
+│   │
+│   └── utils/
+│       ├── __init__.py
+│       └── helpers.py
+│
+├── models/
+│   ├── random_forest_model.pkl
+│   └── scaler.pkl
+│
+├── scripts/
+│   └── train_model.py            # renamed from train_model_api.py
+│
+├── tests/
+│   └── test_model.py
+│
+├── .gitignore
+├── README.md
+├── requirements.txt
+├── setup.py (optional)
+└── pyproject.toml (recommended modern approach)
