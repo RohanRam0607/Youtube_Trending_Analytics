@@ -46,7 +46,7 @@ https://youtubetrendinganalytics-ucjm8jek7grxktmnulduqc.streamlit.app/
 ---
 
 ## 📂 Project Structure
-
+---
 yt-project/
 │
 ├── .github/
@@ -85,5 +85,7 @@ yt-project/
 ├── .gitignore
 ├── README.md
 ├── requirements.txt
+
+---
 ├── setup.py (optional)
 └── pyproject.toml (recommended modern approach)
