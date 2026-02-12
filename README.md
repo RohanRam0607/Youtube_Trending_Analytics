@@ -46,46 +46,48 @@ https://youtubetrendinganalytics-ucjm8jek7grxktmnulduqc.streamlit.app/
 ---
 
 ## 📂 Project Structure
----
-yt-project/
+
+## 📁 Project Structure
+
+```bash
+Youtube_Trending_Analytics/
 │
 ├── .github/
 │   └── workflows/
-│       └── ci.yml                # (optional) GitHub Actions CI
+│       └── ci.yml                  # (Optional) GitHub Actions CI pipeline
 │
 ├── .streamlit/
-│   └── config.toml               # Streamlit config (NOT secrets)
+│   └── config.toml                 # Streamlit configuration (NOT secrets)
 │
 ├── app/
 │   ├── __init__.py
-│   ├── main.py                   # Streamlit entry point (renamed from app.py)
+│   ├── main.py                     # Streamlit entry point
+│   │
 │   ├── ui/
 │   │   ├── __init__.py
-│   │   └── components.py
+│   │   └── components.py           # UI components
 │   │
 │   ├── services/
 │   │   ├── __init__.py
-│   │   ├── model_service.py
-│   │   └── prediction_service.py
+│   │   ├── model_service.py        # Model loading logic
+│   │   └── prediction_service.py   # Prediction pipeline
 │   │
 │   └── utils/
 │       ├── __init__.py
-│       └── helpers.py
+│       └── helpers.py              # Utility/helper functions
 │
 ├── models/
-│   ├── random_forest_model.pkl
-│   └── scaler.pkl
+│   ├── random_forest_model.pkl     # Trained ML model
+│   └── scaler.pkl                  # Feature scaler
 │
 ├── scripts/
-│   └── train_model.py            # renamed from train_model_api.py
+│   └── train_model.py              # Model training script
 │
 ├── tests/
-│   └── test_model.py
+│   └── test_model.py               # Unit tests
 │
 ├── .gitignore
 ├── README.md
 ├── requirements.txt
-
----
-├── setup.py (optional)
-└── pyproject.toml (recommended modern approach)
+└── pyproject.toml                  # (Recommended) Modern Python configuration
+```
